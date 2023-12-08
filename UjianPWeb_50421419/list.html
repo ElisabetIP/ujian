@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="list.css">
+    <title>Daftar Buku</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html"><img src="home.png" alt="Home" class="nav-icon"></a></li>
+                <li><a href="newbuku.html"><img src="newbuku.png" alt="New Buku" class="nav-icon"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Daftar Buku</h2>
+        <div class="book-table-container">
+        <table class="book-table">
+            <thead>
+                <tr>
+                    <th>Judul Buku</th>
+                    <th>Penerbit</th>
+                    <th>Tahun Terbit</th>
+                    <th>Stock</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Akuntansi Pengantar 1 </td>
+                    <td>Supardi	Gava Media</td>
+                    <td>2009</td>
+                    <td>16</td> 
+                    <td>
+                        <button class="delete-button" onclick="deleteRow(this)">
+                            <img src="trash-icon.png" alt="Delete">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Aplikasi Klinis Induk Ovulasi & Stimulasi </td>
+                    <td>Samsulhadi</td>
+                    <td>2003</td>
+                    <td>2</td> <td>
+                        <button class="delete-button" onclick="deleteRow(this)">
+                            <img src="trash-icon.png" alt="Delete">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Aplikasi Praktis Asuhan Keperawatan Keluarga</td>
+                    <td>M. Z. Arifin</td>
+                    <td>2012</td>
+                    <td>5</td>
+                    <td>
+                        <button class="delete-button" onclick="deleteRow(this)">
+                            <img src="trash-icon.png" alt="Delete">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>A-Z Psikologi : Berbagai kumpulan topik Psikologi</td>
+                    <td>Komang Ayu Heni</td>
+                    <td>2019</td>
+                    <td>33</td>
+                    <td>
+                        <button class="delete-button" onclick="deleteRow(this)">
+                            <img src="trash-icon.png" alt="Delete">
+                        </button>
+                    </td>
+                </tr><tr>
+                    <td>Bangsa gagal ; Mencari identitas kebangsaan</td>
+                    <td>Zainul Anwar</td>
+                    <td>2005</td>
+                    <td>19</td>
+                    <td>
+                        <button class="delete-button" onclick="deleteRow(this)">
+                            <img src="trash-icon.png" alt="Delete">
+                        </button>
+                    </td>
+                </tr><tr>
+                    <td>Cedera Kepala</td>
+                    <td>Nasruddin Anshoriy</td>
+                    <td>2017</td>
+                    <td>5</td>
+                    <td>
+                        <button class="delete-button" onclick="deleteRow(this)">
+                            <img src="trash-icon.png" alt="Delete">
+                        </button>
+                    </td>
+                </tr><tr>
+                    <td>Dasar Dasar Uroginekologi</td>
+                    <td>Pribakti</td>
+                    <td>2019</td>
+                    <td>-</td>
+                    <td>
+                        <button class="delete-button" onclick="deleteRow(this)">
+                            <img src="trash-icon.png" alt="Delete">
+                        </button>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        </div>
+    </section>
+
+    <script>
+        function deleteRow(btn) {
+            // Assuming the button is in the same row as the data you want to delete
+            var row = btn.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        }
+    </script>
+
+
+</body>
+</html>

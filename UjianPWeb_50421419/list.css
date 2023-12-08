@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('bgbuku.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+header {
+    color: #fff;
+    padding: 1px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 40px;
+}
+
+.nav-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+section {
+    text-align: center;
+}
+
+h2 {
+    color: #fff;
+    display: flex;
+    font-family: playfair;
+    font-weight: 40px;
+    font-size: 40px;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.book-table-container {
+    background: whitesmoke;
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.book-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+.book-table th, .book-table td {
+    border: 1px solid #848484;
+    padding: 10px;
+}
+
+.book-table th {
+    background-color: rgb(162, 2, 2);
+    color: wheat;
+}
+
+.book-table tbody tr:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.delete-button {
+    display: none;
+}
+
+
+.delete-button img {
+    width: 20px; 
+    height: auto; 
+}
+
+tr:nth-child(n+1) .delete-button {
+    display: inline-block;
+}
+

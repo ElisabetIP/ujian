@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  header {
+    color: #fff;
+    padding: 1px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 40px;
+}
+
+.nav-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+  form {
+    width: 10cm;
+    font-family: poppins;
+    background-color: #f5c9c1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+h2{
+    font-family: poppins;
+    display: absolute;
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 10px;  
+}
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+
+.tambahbuku {
+   display: block;
+   margin: 20px auto; 
+   color: black;
+   padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+   cursor: pointer;
+   transition: background 0.3s, color 0.3s; 
+   text-align: center;
+   outline: none;
+   font-size: 14px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+  
+
+.tambahbuku:hover {
+    background: #681709;
+    color: white;
+}
